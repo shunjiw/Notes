@@ -26,6 +26,4 @@ When there are collinearities in the linear regression, the coefficients are poo
 
 The Lasso is a linear model that estimates sparse coefficients, which minimizes the penalized residual sum of squares: MSE + lambda * l1_norm of coefficients. It is useful in some contexts due to its tendency to prefer solutions with fewer non-zero coefficients, effectively reducing the number of features upon which the given solution is dependent. 
 
-#### How to set lambda in Lasso?
-* By cross validation
-* By AIC or BIC
+* How to set lambda in Lasso? Cross validation or information criteria (AIC or BIC)
