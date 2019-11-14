@@ -16,3 +16,16 @@ The OLS solution is the best linear unbiased estimator 'BLUE'. However, there ma
 * The independence of the features. 
   - If the predictors are linear dependent, the design matrix becomes singular so that the least square estimate becomes highly sensitive to random errors. This’s called multicollinearity.
 
+### Ridge Regression
+
+Ridge regreesion minimizes the penalized residual sum of squares: MSE + lambda * l2_norm of coefficients. Lambda is the complexity parameter which controls the amount of shrinkage. The larger the lambda, the larger the amount of the shrinkage. 
+
+When there are collinearities in the linear regression, the coefficients are poorly fitted and show high variance. But shrinkage method can solve this problem. Need to standardize the input and the intercept term is out of the penalty.
+
+### Lasso 
+
+The Lasso is a linear model that estimates sparse coefficients, which minimizes the penalized residual sum of squares: MSE + lambda * l1_norm of coefficients. It is useful in some contexts due to its tendency to prefer solutions with fewer non-zero coefficients, effectively reducing the number of features upon which the given solution is dependent. 
+
+#### How to set lambda in Lasso?
+* By cross validation
+* By AIC or BIC
