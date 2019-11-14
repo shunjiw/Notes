@@ -1,7 +1,3 @@
----
-permalink: /GLM.html
----
-
 ### What is linear regression?
 
 Linear regression is a linear approach to model the relationship between the response variable and the explanatory variables. The expectation of Y given X is linear in the parameters. 	
