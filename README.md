@@ -1,3 +1,4 @@
 # Contents
 
-* [Machine Learning](./Machine%20learning/)
+* Machine Learning
+  * [GLM](./Machine%20learning/GLM.md)
