@@ -33,3 +33,7 @@ The Lasso is a linear model that estimates sparse coefficients, which minimizes 
 Logistic regression is a linear model for classification. It applies to binary, one to rest, and multiple cases. For k class, model the log-odds by the linear function of x. By default, the last one is the reference class. 
 
 The models are fit by the maximum likelihood. Because we model the conditional probability Pr(G|X), the multinomial distribution is appropriate. The algorithm to solve logistic regression is Newton-Raphson algorithm or iteratively reweighted least squares (IRLS). 
+
+### Poisson Regression
+
+See details on https://en.wikipedia.org/wiki/Poisson_regression
