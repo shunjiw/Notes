@@ -27,3 +27,9 @@ When there are collinearities in the linear regression, the coefficients are poo
 The Lasso is a linear model that estimates sparse coefficients, which minimizes the penalized residual sum of squares: MSE + lambda * l1_norm of coefficients. It is useful in some contexts due to its tendency to prefer solutions with fewer non-zero coefficients, effectively reducing the number of features upon which the given solution is dependent. 
 
 * How to set lambda in Lasso? Cross validation or information criteria (AIC or BIC)
+
+### Logistic (Logit) Regression
+
+Logistic regression is a linear model for classification. It applies to binary, one to rest, and multiple cases. For k class, model the log-odds by the linear function of x. By default, the last one is the reference class. 
+
+The models are fit by the maximum likelihood. Because we model the conditional probability Pr(G|X), the multinomial distribution is appropriate. The algorithm to solve logistic regression is Newton-Raphson algorithm or iteratively reweighted least squares (IRLS). 
