@@ -43,19 +43,18 @@ Large image needs billions of parameters which is infeasible for original NN.
   -	p[l] is the amount of padding, to make the output have the same shape of the input.
   -	S[l] is the amount of stride
   -	N_c[l] is the number of filters
-  
   -	Input: n_h[l-1] * n_w[l-1] *n_c[l-1].
   -	Output: n_h[l] * n_w[l] *n_c[l].
   -	Each filter: f[l] * f[l] * n_c[l-1].
   -	Activations: n_h[l] * n_w[l] * n_c[l]. 
   -	Weights: f[l] * f[l] * n_c[l-1] * n_c[l]. 
-*	ConvNet:
+- ConvNet:
   +	the 39,39,3 -> 37,37,10 -> 17,17,20 -> 7,7,40 -> 1940 units -> y_hat.
   +	the n_h and n_w are decreasing and n_c is increasing.
   +	Types of layers in CNN:
-    -	Convolution (CONV): take the element-wise multiply over the region
-    -	Pooling (POOL)
-    -	Fully connected (FC)
+		-	Convolution (CONV): take the element-wise multiply over the region
+		-	Pooling (POOL)
+		-	Fully connected (FC)
 *	Pooling layer:
   -	Max pooling: take the maximum over the region.
     -	It’s done individually for each channel
