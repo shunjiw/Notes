@@ -55,16 +55,15 @@ Large image needs billions of parameters which is infeasible for original NN.
 		-	Convolution (CONV): take the element-wise multiply over the region
 		-	Pooling (POOL)
 		-	Fully connected (FC)
-*	Pooling layer:
-  -	Max pooling: take the maximum over the region.
-    -	It’s done individually for each channel
-    - There is no parameter to learn when you fix f and s
+-	Pooling layer:
+	-	Max pooling: take the maximum over the region.
+		-	It’s done individually for each channel
+		- There is no parameter to learn when you fix f and s
   -	Average Pooling: take the average over the region.
-  -	Hyperparameters: f = 2, s = 2, max or average pooling
-  -	P = 0
-*	Fully connected layer:
+  -	Hyperparameters: f = 2, s = 2, max or average pooling P = 0.
+-	Fully connected layer:
   -	It’s just the ordinary layer in DNN, like a matrix of weights (400, 120)
-*	An example of CNN:
+-	An example of CNN:
   -	CONV1 -> Pool -> CON2 -> Pool -> FC -> FC -> FC -> maxsoft
 	 
 *	Why convolutions?
